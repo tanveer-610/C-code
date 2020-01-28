@@ -1,0 +1,17 @@
+#include<stdio.h>
+enum days_of_week
+{
+    sun,mon,tue,wed,thur,fri
+};
+
+int main()
+{
+    enum days_of_week day1,day2;
+    day1=tue;
+    day2=wed;
+
+    int dif=day2-day1;
+    printf("difference=%d",dif);
+
+    getch();
+}
