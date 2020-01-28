@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int x=100;
+    int *px=&x;
+     *px=200;
+    printf("%d\n",*px);//100
+    printf("%d\n",x);//100
+    printf("%d\n",px);
+
+    int **pxx=&px;
+    **pxx=300;
+        printf("%d\n",*pxx);
+        printf("%d\n",*(px));
+        printf("%d\n",pxx);
+
+}
