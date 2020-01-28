@@ -1,0 +1,19 @@
+//For  printing all the diagonals elements of a 2D array
+#include<stdio.h>
+main()
+{
+    int a[3][3] = {{1,2,3},{3,5,7},{6,2,1}},d[6],row,col,i;
+    for(row = 0; row<3; row++)
+    {
+        for(col = 0;col<3; col++)
+        {
+            if(row == col)
+                d[col] = a[row][col];
+            if((row+2)==col || (row-2)== col|| row==col)
+                d[col+3]= a[row][col];
+        }
+    }
+    printf("All the diagonals elements are :");
+    for(i=0;i<6;i++)
+    printf(" %d \n",d[i]);
+}
