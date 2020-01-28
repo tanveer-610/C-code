@@ -1,0 +1,73 @@
+#include<stdio.h>
+struct products
+{
+    int pid;
+    char pname[40];
+    float price;
+
+};
+main()
+{
+    int size;
+    printf("Enter size:");
+    scanf("%d",&size);
+    struct products no[size];
+    int array[size];
+    for(int i=0;i<size;i++)
+    {
+      printf("\tEnter info %d products:\n",i+1);
+      fflush(stdin);
+      scanf("%d",&no[i].pid);
+      fflush(stdin);
+      scanf("%[^\n]",&no[i].pname);
+      fflush(stdin);
+      scanf("%f",&no[i].price);
+      fflush(stdin);
+      array[i]=no[i].price;
+    }
+    int max=maxProduct(array,size);
+    for(int i=0;i<size;i++)
+    {
+        if(max==no[i].price)
+            printf("Max product Name = %s\n",no[i].pname);
+    }
+    int min=minProduct(array,size);
+    for(int i=0;i<size;i++)
+    {
+        if(min==no[i].price)
+            printf("Min product Name = %s\n",no[i].pname);
+    }
+    display(no,size);
+}
+int maxProduct(int array[],int size)
+{
+    int max=array[0];
+   for(int i=0;i<size;i++)
+   {
+       if(max<array[i])
+       {
+           max=array[i];
+       }
+   }
+   return max;
+}
+int minProduct(int array[],int size)
+{
+    int min=array[0];
+   for(int i=0;i<size;i++)
+   {
+       if(min>array[i])
+       {
+           min=array[i];
+       }
+   }
+   return min;
+}
+void display(struct products no[],int size)
+ {
+     printf("\tPID\tPName\tPrice\n");
+     for(int i=0;i<size;i++)
+     {
+         printf("\t%d\t%s\t%.2f\n",no[i].pid,no[i].pname,no[i].price);
+     }
+ }
