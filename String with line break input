@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int count=0;
+    char *s="BA﻿ BA BA BABANANA"
+"BA BA BA BABANANA"
+
+"BANANA NA AHH, POTATO NA AH AH BANANA AH AH"
+
+"TO GA LI NO PO TAH TO NI GAH NI BAH LO BAH NI KAH NO JI GAH BA BA BA BABANANA."
+
+"YO PLANO HU LA PA NO NO TU MA BANANA LIKE A NUPI TALAMOO"
+
+"BANANA BA BA BABANANA BA BA BA BABANANA"
+
+"POTATO HO HOOOOOO"
+
+"TO GA LI NO PO TAH TO NI GAH NI BAH LO BAH NI KAH NO JI"
+
+"GAH BA BA BA BABANANAAAAAAAAA"
+
+"DHISYAAAAAA";
+    for(int i=0;s[i]!='\0';i++)
+{
+    if(s[i]=='A')
+        count++;
+}
+printf("%d",count);
+
+}
