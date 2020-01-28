@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("enter a integer value:");
+    scanf("%d",&i);
+    printf("The ASCII value is:%c",i);
+    return 0;
+}
