@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int x=5;
+    int *p;
+    p=&x;
+
+    printf("value of x=%d\n",x);
+    printf("address of x=%u\n",&x);
+    printf("address of x=%d\n",p);
+    printf("value of x=%d\n",*p);
+    printf("address of x=%d\n",&p);
+}
