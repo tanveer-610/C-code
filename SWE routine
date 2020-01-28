@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+    int day;
+
+    scanf("%d",&day);
+
+    switch(day){
+
+case 1:
+    printf("\t\t\t\tsaturday\n");
+     printf("8:30-10.00\t10.00-11.30\t11.30-1.00\t2.30-4.00\t4.00-5.30\n");
+     printf("swe123\t\tmat\t\tswe122\t\n");
+     break;
+     case 2:
+    printf("\t\t\t\tsunday\n");
+     printf("8:30-10.00\t10.00-11.30\t11.30-1.00\t2.30-4.00\t4.00-5.30\n");
+     printf("swe123\t\tmat\t\tswe122\t\n");
+     break;
+     case 3:
+    printf("\t\t\t\tmonday\n");
+     printf("8:30-10.00\t10.00-11.30\t11.30-1.00\t2.30-4.00\t4.00-5.30\n");
+     printf("swe123\t\tmat\t\tswe122\t\n");
+     break;
+    case 4:
+    printf("\t\t\t\ttuesday\n");
+     printf("8:30-10.00\t10.00-11.30\t11.30-1.00\t2.30-4.00\t4.00-5.30\n");
+     printf("swe123\t\tmat\t\tswe122\t\n");
+     break;
+    case 5:
+    printf("\t\t\t\twednesday\n");
+     printf("8:30-10.00\t10.00-11.30\t11.30-1.00\t2.30-4.00\t4.00-5.30\n");
+     printf("swe123\t\tmat\t\tswe122\t\n");
+     break;
+    case 6:
+    printf("\t\t\t\tthursday\n");
+     printf("8:30-10.00\t10.00-11.30\t11.30-1.00\t2.30-4.00\t4.00-5.30\n");
+     printf("swe123\t\tmat\t\tswe122\t\n");
+     break;
+    }
+
+}
