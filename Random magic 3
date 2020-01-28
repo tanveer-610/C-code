@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int magic,guess;
+    magic=rand();
+    scanf("%d",&guess);
+    if(guess==magic)
+        printf("found");
+    else
+        printf("Wrong");
+}
+
