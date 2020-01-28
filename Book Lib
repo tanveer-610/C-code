@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char name[6],id[3];
+    char mn[6],mid[3];
+    int i,j,price[4];
+    int max=price[0];
+    for(i=0;i<4;i++)
+    {
+     printf("Book %d\n",i+1);
+     for(j=0;j<6;j++)
+     {
+         scanf("%c",&name[j]);
+     }
+      for(j=0;j<3;j++)
+     {
+         scanf("%c",&id[j]);
+     }
+
+     scanf("%d",&price[i]);
+     if(max<price[i])
+     {
+         max=price[i];
+        strcpy(mn,name);
+        strcpy(mid,id);
+     }
+    }
+    printf("%s\n%s\n%d",mn,mid,max);
+}
