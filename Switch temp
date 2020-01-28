@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+    int choice;
+    float temp,conTem;
+
+    printf("Temperature COnvertion Menu\n");
+    printf("1.Fahrenheit to Celsius\n");
+    printf("2.Celsius to Fahenheit\n");
+    printf("Enter your choice:\n");
+    scanf("%d",&choice);
+
+    switch(choice)
+    {
+    case 1:
+        {
+            printf("Enter the Fahrenheit tem:\n");
+            scanf("%f",&temp);
+            conTem=(temp-32)/1.8;
+            printf("The celsius temp is:%f\n",conTem);
+            break;
+        }
+    case 2:
+        {
+            printf("Enter the Celsius temp:\n");
+            scanf("%f",&temp);
+            conTem=(1.8*temp)+32;
+            printf("The fahrenheit temp is:%f\n",conTem);
+            break;
+        }
+    default:
+        printf("not a correct option\n");
+
+
+
+    }
+
+
+
+
+    return 0;
+}
