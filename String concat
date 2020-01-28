@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    char str1[]="my name is ";
+    char str2[]="tanvirul islam";
+
+    strcat(str1,str2);//strcat(str1,"tanvirul islam";
+
+    printf("str1=%s\n",str1);
+
+    char str3[500]="oh my allah";
+    char str4[]="xcgk, ghgj";
+
+    int i=0,len=0,j=0;
+
+    while(str3[i]!=0)
+    {
+        i++;
+        len++;
+    }
+
+    while(str4[j]!=0)
+    {
+        str3[len+j]=str4[j];
+        j++;
+    }
+
+     printf("str3=%s\n",str3);
+}
