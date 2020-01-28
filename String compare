@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    char str1[]="Anisul islam";
+    char str2[]="Anisul islam amitt";
+
+    int d=strcmp(str1,str2);
+
+    if(d==0)
+        printf("strings are equal");
+    else
+
+    printf("not equal");
+}
